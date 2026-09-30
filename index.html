@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Notes App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">&#128218</div>
+            <div>
+                <h1>Student Notes</h1>
+                <p>Organize your thoughts, ideas & learning notes</p>
+            </div>
+        </header>
+
+        <!-- Add Note Section -->
+        <section class="note-form">
+
+            <h2>Create a New Note</h2>
+            <p class="form-subtitle">Add your study notes and keep them organized.</p>
+
+            <label for="studentName">Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+            >
+
+            <label for="note">Your Note</label>
+            <textarea
+                id="note"
+                placeholder="Write your note here..."
+            ></textarea>
+
+            <button class="add-btn" onclick="addNote()">
+                + Add Note
+            </button>
+
+        </section>
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>My Notes</h2>
+                    <p>Your saved notes will appear here.</p>
+                </div>
+
+                <span id="noteCount">0 Notes</span>
+            </div>
+
+            <div id="notesList" class="notes-grid">
+
+                <div class="empty-state">
+                    <div class="empty-icon">📝</div>
+                    <h3>No notes yet</h3>
+                    <p>Create your first note to get started.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Cloud Computing Activity • Student Notes App</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
